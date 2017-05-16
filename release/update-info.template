@@ -1,0 +1,4 @@
+{
+	"releaseDate" : "@releaseDate@",
+	"releaseLink" : "https://raw.githubusercontent.com/DSATool/NotesPlugin/master/release/Notes_@releaseDate@.zip"
+}

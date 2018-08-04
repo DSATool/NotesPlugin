@@ -22,8 +22,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import com.sun.javafx.scene.web.skin.HTMLEditorSkin;
-
 import dsatool.resources.ResourceManager;
 import dsatool.util.ErrorLogger;
 import javafx.beans.value.ObservableValue;
@@ -36,6 +34,7 @@ import javafx.scene.control.MultipleSelectionModel;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.web.HTMLEditor;
+import javafx.scene.web.HTMLEditorSkin;
 import javafx.stage.FileChooser;
 import jsonant.event.JSONListener;
 import jsonant.value.JSONArray;
@@ -159,18 +158,18 @@ public class NotesController implements JSONListener {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see resources.ResourceListener#notifyChanged()
 	 */
 	@Override
-	public void notifyChanged(JSONValue changed) {
+	public void notifyChanged(final JSONValue changed) {
 		reload();
 	}
 
 	private void prepare() {
 		listModel = list.getSelectionModel();
 
-		listModel.selectedIndexProperty().addListener((ObservableValue<? extends Number> observable, Number oldValue, Number newValue) -> {
+		listModel.selectedIndexProperty().addListener((final ObservableValue<? extends Number> observable, final Number oldValue, final Number newValue) -> {
 			if (listModel.getSelectedIndex() > -1) {
 				final JSONObject notizen = ResourceManager.getResource("Notizen");
 				final JSONArray daten = notizen.getArr("Notizen");

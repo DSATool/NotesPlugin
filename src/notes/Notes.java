@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2017 DSATool team
  *
@@ -14,9 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package notes;
+
 import dsatool.gui.Main;
 import dsatool.plugins.Plugin;
-import notes.NotesController;
 
 /**
  * A simple plugin for taking notes
@@ -31,7 +31,7 @@ public class Notes extends Plugin {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see plugins.Plugin#getPluginName()
 	 */
 	@Override
@@ -41,7 +41,7 @@ public class Notes extends Plugin {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see plugins.Plugin#initialize()
 	 */
 	@Override
@@ -56,7 +56,7 @@ public class Notes extends Plugin {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see plugins.Plugin#load()
 	 */
 	@Override

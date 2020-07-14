@@ -61,8 +61,6 @@ public class Notes extends Plugin {
 	 */
 	@Override
 	public void load() {
-		if (controller != null) {
-			controller.load();
-		}
+		controller.load();
 	}
 }

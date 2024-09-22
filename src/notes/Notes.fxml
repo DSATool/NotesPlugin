@@ -17,36 +17,36 @@
       <VBox spacing="2" >
          <HBox alignment="CENTER" spacing="2" >
             <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#addEntry" prefWidth="25" prefHeight="25" text="&#xE145;" >
-               <padding><Insets top="0" right="0" bottom="0" left="0"/></padding>
+               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
                <font>
-                  <Font name="Material Icons" size="20.0" />
+                  <Font name="Material Symbols Outlined" size="20.0" />
                </font>
                <tooltip>
                   <Tooltip text="Neue Notiz" />
                </tooltip>
             </Button>
             <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#removeEntry" prefWidth="25" prefHeight="25" text="&#xE15B;" >
-               <padding><Insets top="0" right="0" bottom="0" left="0"/></padding>
+               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
                <font>
-                  <Font name="Material Icons" size="20.0" />
+                  <Font name="Material Symbols Outlined" size="20.0" />
                </font>
                <tooltip>
                   <Tooltip text="Notiz löschen" />
                </tooltip>
             </Button>
             <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#loadFile" prefWidth="25" prefHeight="25" text="&#xE2C8;" >
-               <padding><Insets top="0" right="0" bottom="0" left="0"/></padding>
+               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
                <font>
-                  <Font name="Material Icons" size="20.0" />
+                  <Font name="Material Symbols Outlined" size="20.0" />
                </font>
                <tooltip>
                   <Tooltip text="Datei öffnen" />
                </tooltip>
             </Button>
             <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#saveFile" prefWidth="25" prefHeight="25" text="&#xE161;" >
-               <padding><Insets top="0" right="0" bottom="0" left="0"/></padding>
+               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
                <font>
-                  <Font name="Material Icons" size="20.0" />
+                  <Font name="Material Symbols Outlined" size="20.0" />
                </font>
                <tooltip>
                   <Tooltip text="In Datei speichern" />

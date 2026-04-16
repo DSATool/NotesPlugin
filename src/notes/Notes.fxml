@@ -16,8 +16,7 @@
    <left>
       <VBox spacing="2" >
          <HBox alignment="CENTER" spacing="2" >
-            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#addEntry" prefWidth="25" prefHeight="25" text="&#xE145;" >
-               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
+            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#addEntry" prefWidth="25" prefHeight="25" text="&#xE145;" style="-fx-padding: 0 0 -5 0;" >
                <font>
                   <Font name="Material Symbols Outlined" size="20.0" />
                </font>
@@ -25,8 +24,7 @@
                   <Tooltip text="Neue Notiz" />
                </tooltip>
             </Button>
-            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#removeEntry" prefWidth="25" prefHeight="25" text="&#xE15B;" >
-               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
+            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#removeEntry" prefWidth="25" prefHeight="25" text="&#xE15B;" style="-fx-padding: 0 0 -5 0;" >
                <font>
                   <Font name="Material Symbols Outlined" size="20.0" />
                </font>
@@ -34,8 +32,7 @@
                   <Tooltip text="Notiz löschen" />
                </tooltip>
             </Button>
-            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#loadFile" prefWidth="25" prefHeight="25" text="&#xE2C8;" >
-               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
+            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#loadFile" prefWidth="25" prefHeight="25" text="&#xE2C8;" style="-fx-padding: 0 0 -5 0;" >
                <font>
                   <Font name="Material Symbols Outlined" size="20.0" />
                </font>
@@ -43,8 +40,7 @@
                   <Tooltip text="Datei öffnen" />
                </tooltip>
             </Button>
-            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#saveFile" prefWidth="25" prefHeight="25" text="&#xE161;" >
-               <padding><Insets top="0" right="0" bottom="-5" left="0"/></padding>
+            <Button maxWidth="Infinity" HBox.hgrow="ALWAYS" onAction="#saveFile" prefWidth="25" prefHeight="25" text="&#xE161;" style="-fx-padding: 0 0 -5 0;" >
                <font>
                   <Font name="Material Symbols Outlined" size="20.0" />
                </font>

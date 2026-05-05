@@ -24,7 +24,6 @@ import java.io.IOException;
 
 import dsatool.resources.ResourceManager;
 import dsatool.util.ErrorLogger;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -77,8 +76,8 @@ public class NotesController implements JSONListener {
 		prepare();
 
 		for (final Node n : ((GridPane) ((HTMLEditorSkin) text.getSkin()).getChildren().get(0)).getChildren()) {
-			n.setOnMouseExited(e -> textChanged());
-			n.focusedProperty().addListener((o, oldV, newV) -> {
+			n.setOnMouseExited(_ -> textChanged());
+			n.focusedProperty().addListener((_, _, newV) -> {
 				if (!newV) {
 					textChanged();
 				}
@@ -169,7 +168,7 @@ public class NotesController implements JSONListener {
 	private void prepare() {
 		listModel = list.getSelectionModel();
 
-		listModel.selectedIndexProperty().addListener((final ObservableValue<? extends Number> observable, final Number oldValue, final Number newValue) -> {
+		listModel.selectedIndexProperty().addListener((_, _, _) -> {
 			if (listModel.getSelectedIndex() > -1) {
 				final JSONObject notizen = ResourceManager.getResource("Notizen");
 				final JSONArray daten = notizen.getArr("Notizen");
